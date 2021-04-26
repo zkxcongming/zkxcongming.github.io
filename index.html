@@ -180,7 +180,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-04-26 14:42:33 / 修改时间：19:53:31" itemprop="dateCreated datePublished" datetime="2021-04-26T14:42:33+08:00">2021-04-26</time>
+              <time title="创建时间：2021-04-26 14:42:33 / 修改时间：19:54:13" itemprop="dateCreated datePublished" datetime="2021-04-26T14:42:33+08:00">2021-04-26</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -204,10 +204,6 @@
 
       
           <h2 id="迁移学习中的预训练-微调"><a href="#迁移学习中的预训练-微调" class="headerlink" title="迁移学习中的预训练-微调"></a>迁移学习中的预训练-微调</h2><p>之前没有看到过这个说法，直到翻了翻《深度学习500问》，才看到微调哪些参数是有讲究的。参考 <a target="_blank" rel="noopener" href="https://developer.aliyun.com/article/663228">https://developer.aliyun.com/article/663228</a> 。</p>
-<div align="center">     
-<img src="/2021/04/26/pretrain-finetune/text.png" , style="zoom:60%"><img src="/2021/04/26/pretrain-finetune/graph.png" , style="zoom:60%"> 
-</div>
-
 <div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="/2021/04/26/pretrain-finetune/text.png"></div><div class="group-picture-column" style="width: 50%;"><img src="/2021/04/26/pretrain-finetune/graph.png"></div></div></div></div>
 
 <p>个人理解：目标数据集如果是大量样本，可以不用担心过拟合，微调的参数量可以多一点；如果数据集（任务），则前端（低层次）的特征提取可以共用，所以前端的参数可以冻结；如果是小数据集，可能有过拟合的风险，此时微调的参数不能太多。</p>
